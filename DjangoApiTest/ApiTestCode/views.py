@@ -3,6 +3,7 @@ from django.http import HttpResponse
 import requests
 import json
 
+
 def Curves(request):
     response = open('static/curve-group.json').read()
     curves = json.loads(response)

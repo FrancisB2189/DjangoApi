@@ -5,15 +5,16 @@ body{
     
 }
 
-/* .header img {
-    float: left;
-    width: 8vw;
-    height: 12vh;
-    
-  }
-  
-  .header h1 {
-    margin-top: 1.5%;
-    float: right;
-  }
- */
+.logoOp{
+  height: 15vh;
+  margin-top: -3vh;
+}
+
+.nav-link{
+  font-size: 1.2rem;
+}
+
+.nav-link:hover{
+  color: blue;
+  text-decoration: underline;
+}
