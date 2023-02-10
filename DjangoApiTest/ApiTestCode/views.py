@@ -1,13 +1,14 @@
 from django.shortcuts import render
 from django.http import HttpResponse
 import requests
+import json
 
-def Products(request):
-    response = requests.get('https://fakestoreapi.com/products')
-    Products = response.json()
-    print(Products)    
+def Curves(request):
+    response = open('static/curve-group.json').read()
+    curves = json.loads(response)
+    print(curves)    
 
-    return render(request, "ApiTest.html", {'products': Products})
+    return render(request, "ApiTest.html", {'curves': Curves})
     pass
 
 

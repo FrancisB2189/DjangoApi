@@ -1,0 +1,37 @@
+[
+  {
+    "id": 1,
+    "groupName": "MULTI-CURVE",
+    "curveType": "Discount",
+    "curveReference": "EUR",
+    "curveName": "EUR-OIS"
+  },
+  {
+    "id": 2,
+    "groupName": "MULTI-CURVE",
+    "curveType": "Forward",
+    "curveReference": "EUR-EONIA",
+    "curveName": "EUR-OIS"
+  },
+  {
+    "id": 3,
+    "groupName": "MULTI-CURVE",
+    "curveType": "Forward",
+    "curveReference": "EUR-EURIBOR-1M",
+    "curveName": "EUR-EURIBOR1M"
+  },
+  {
+    "id": 4,
+    "groupName": "MULTI-CURVE",
+    "curveType": "Forward",
+    "curveReference": "EUR-EURIBOR-3M",
+    "curveName": "EUR-EURIBOR3M"
+  },
+  {
+    "id": 5,
+    "groupName": "MULTI-CURVE",
+    "curveType": "Forward",
+    "curveReference": "EUR-EURIBOR-6M",
+    "curveName": "EUR-EURIBOR6M"
+  }
+]
