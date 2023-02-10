@@ -5,5 +5,6 @@ def users(request):    #pull data from third party rest api
     response = requests.get('https://jsonplaceholder.typicode.com/users')    #convert reponse data into json
     users = response.json()
     print(users)    
-    return render(request, "users.html")
+
+    return render(request, "users.html", {'users': users})
     pass
