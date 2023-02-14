@@ -4,7 +4,7 @@ import requests
 import json
 import datetime
 import pandas as pd
-import plotly.express as ptx
+import plotly.express as px
 import matplotlib.pyplot as plt
 import io
 import urllib, base64
@@ -33,7 +33,3 @@ def home(request):
     string = base64.b64encode(buf.read())
     uri = urllib.parse.quote(string)
     return render(request,'ApiTest.html',{'data':uri})
-#
-# df = px.data.gapminder().query("continent == 'Oceania'")
-# fig = px.line(df, x='year', y='lifeExp', color='country', markers=True)
-# fig.show()
