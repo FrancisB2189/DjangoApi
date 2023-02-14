@@ -13,14 +13,14 @@ def Curves(request):
     plt.plot(curve1.keys(), curve1.values())
     plt.plot(curve2.keys(), curve2.values())
     showfigure = plt.show()
-    return render(request, "ApiTest.html", {showfigure})
+    return render(request, "ApiTest.html")
     pass
 
-def Unis(request):
-    response = requests.get('http://universities.hipolabs.com/search?country=Netherlands')
-    Unis = response.json()
-    print(Unis)    
-
-    return render(request, "universities.html", {'universities': Unis})
-    pass
+# def Unis(request):
+#     response = requests.get('http://universities.hipolabs.com/search?country=Netherlands')
+#     Unis = response.json()
+#     print(Unis)
+#
+#     return render(request, "universities.html", {'universities': Unis})
+#     pass
 
